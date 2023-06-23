@@ -22,7 +22,6 @@ import lombok.NoArgsConstructor;
 @Getter
 @Entity
 public class Cliente {
-	@Getter
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "id", updatable = false, unique = true, nullable = false)
@@ -34,9 +33,7 @@ public class Cliente {
 	private String email;
 	@NotBlank
 	private String celular;
-	@Getter
 	private String telefone;
-	@Getter
 	private Sexo sexo;
 	@NotNull
 	private LocalDate dataNascimento;
@@ -44,9 +41,7 @@ public class Cliente {
 	private String cpf;
 	@NotNull
 	private Boolean aceitaTermos;
-	@Getter
 	private LocalDateTime dataHoraDoCadastro;
-	@Getter
 	private LocalDateTime dataHoraDaUltimaAlteracao;
 	
 	
