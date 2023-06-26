@@ -10,9 +10,8 @@ import br.com.petz.clientepet.cliente.application.api.ClienteResponse;
 
 public interface ClienteService {
 	ClienteResponse criaCliente(ClienteRequest clienteRequest);
-
 	List<ClienteListResponse> buscaTodosClientes();
-
 	ClienteDetalhadoResponse buscaClienteAtravesId(UUID idCliente);
+	void deletaClienteAtravesId(UUID idCliente);
 
 }
