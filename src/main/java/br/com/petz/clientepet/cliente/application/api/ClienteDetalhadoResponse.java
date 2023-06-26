@@ -20,7 +20,7 @@ public class ClienteDetalhadoResponse {
 	private LocalDateTime dataHoraDoCadastro;
 
 	public ClienteDetalhadoResponse(Cliente cliente) {
-		this.idCliente = getIdCliente();
+		this.idCliente = cliente.getIdCliente();
 		this.nomeCompleto = cliente.getNomeCompleto();
 		this.cpf = cliente.getCpf();
 		this.email = cliente.getEmail();

@@ -44,7 +44,6 @@ public class ClienteApplicationService implements ClienteService {
 		log.info("[inicia] ClienteApplicationService -buscaClienteAtravesId");
 		Cliente cliente = clienteRepository.buscaClienteAtravesId(idCliente);
 		log.info("[finaliza] ClienteApplicationService -buscaClienteAtravesId");
-
 		return new ClienteDetalhadoResponse(cliente);
 	}
 
